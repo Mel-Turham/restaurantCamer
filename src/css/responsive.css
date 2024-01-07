@@ -1,0 +1,172 @@
+/* laptop */
+
+@media screen and (max-width: 991px) {
+	.sombre {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.8);
+		z-index: 4;
+		display: none;
+		opacity: 0;
+		transition: all 300ms ease-in-out;
+	}
+	.sombre.show {
+		display: flex;
+		opacity: 1;
+	}
+	.header {
+		padding: 0.5rem;
+		justify-content: space-between;
+	}
+	.header__logo span {
+		font-size: 1.5rem;
+		
+	}
+	.header__nav {
+		z-index: 10;
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 100vh;
+		background-color: rgba(255, 255, 255, 1);
+		box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+		width: 60%;
+		align-items: start;
+		justify-content: flex-start;
+		padding-top: 5rem;
+		transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
+		transform: translateX(-100%);
+		opacity: 0;
+	}
+
+	.header__nav .nav__menu {
+		flex-direction: column;
+		margin-left: 2rem;
+	}
+
+	.header__nav.show {
+		transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
+		transform: translateX(0);
+		opacity: 1;
+	}
+
+	.close__nav {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		top: 1rem;
+		left: 1rem;
+		height: 2rem;
+		width: 2rem;
+		padding-block: 0.2rem;
+		border: none;
+		background: none;
+		font-size: 2rem;
+		cursor: pointer;
+		transition: filter 300ms ease-in-out;
+	}
+	.close__nav:is(:hover) {
+		filter: drop-shadow(1px 1px 0.5rem rgba(54, 54, 54, 0.9));
+	}
+
+	.open__nav {
+		display: block;
+		width: 2rem;
+		height: 2rem;
+		border: none;
+		position: relative;
+		cursor: pointer;
+	}
+
+	.open__nav span {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+		height: 0.2rem;
+		width: 100%;
+		background-color: rgba(0, 0, 0, 0.9);
+		border-radius: 10px;
+	}
+
+	.open__nav span:nth-child(1) {
+		top: 25%;
+	}
+	.open__nav span:nth-child(3) {
+		top: 75%;
+	}
+
+	.hero {
+		height: auto;
+	}
+	.hero .carousel {
+		height: auto;
+	}
+	.main {
+		margin: 2rem 1rem;
+	}
+
+	.container-box {
+		justify-content: center;
+		margin-bottom: 50px;
+	}
+
+	.container-box {
+		figure {
+			display: none;
+		}
+	}
+
+	.nav__cart{
+		position: fixed;
+		bottom: 0.313rem;
+		right: 1rem;
+	}
+
+	.nombre__de__commade{
+		width: 20rem;
+
+		.nb-commade-titre{
+			font-size: 1rem;
+			text-align: start;
+			word-break: break-all;
+		}
+
+		.icon svg{
+			width: 1.5rem;
+			height: auto;
+			fill: #000;
+		}
+	}
+	
+
+}
+
+/* mobile */
+@media (max-width: 480px) {
+	.sombre {
+		display: none;
+		opacity: 0;
+	}
+	.header__nav {
+		width: 100%;
+	}
+
+	form{
+		width: 100%;
+		.fiels-inputs{
+			display: flex;
+			flex-direction: column;
+
+			input{
+				width: 100%;
+			}
+		}
+	}
+}
+
+
