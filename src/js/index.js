@@ -1,8 +1,6 @@
 // datas
 import { data } from './data.js';
-import { platDetail } from './commande.js';
 
-console.log(platDetail);
 
 // load image fast
 
@@ -189,76 +187,9 @@ AllButtonsAddToCart.forEach((button) => {
 
 // Add event on cart
 
-const allCarts = document.querySelectorAll('.cart');
-
-allCarts.forEach((cart) => {
-	cart.addEventListener('click', () => {
 
 
-		let cartId = parseInt(cart.dataset.id);
 
-
-		data.forEach((item) => {
-			if (cartId === item.id) {
-				let product = item;
-
-				platDetail.innerHTML = `
-				<figure class="figurePlat">
-     				 <img src=${product.image} alt=${product.alt}>
-    		</figure>
-
-    <div class="desc-plat">
-      <h1 class="nom-plat">${product.id}</h1>
-      <div class="raitings">
-        <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#0a0a0a" viewBox="0 0 256 256"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg></span>
-        <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#0a0a0a" viewBox="0 0 256 256"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg></span>
-        <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#0a0a0a" viewBox="0 0 256 256"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg></span>
-        <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#0a0a0a" viewBox="0 0 256 256"><path d="M234.5,114.38l-45.1,39.36,13.51,58.6a16,16,0,0,1-23.84,17.34l-51.11-31-51,31a16,16,0,0,1-23.84-17.34L66.61,153.8,21.5,114.38a16,16,0,0,1,9.11-28.06l59.46-5.15,23.21-55.36a15.95,15.95,0,0,1,29.44,0h0L166,81.17l59.44,5.15a16,16,0,0,1,9.11,28.06Z"></path></svg>
-        </span>
-      </div>
-      <div class="prix">
-        <span class="plat-courant">${product.prix}fcfa</span>
-        <span class="ancien-prix">2000 fcfa</span>
-        <span class="promo"> promo</span>
-      </div>
-      <p class="vous">Vous economisez  <strong>${product.prix} fcfa</strong></p>
-      <div class="livraison">
-        <div class="liv-item">
-          <span class="icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M245.57,117.78l-14-35a13.93,13.93,0,0,0-13-8.8H182V64a6,6,0,0,0-6-6H24A14,14,0,0,0,10,72V184a14,14,0,0,0,14,14H42.6a30,30,0,0,0,58.8,0h53.2a30,30,0,0,0,58.8,0H232a14,14,0,0,0,14-14V120A6,6,0,0,0,245.57,117.78ZM182,86h36.58a2,2,0,0,1,1.86,1.26L231.14,114H182ZM22,72a2,2,0,0,1,2-2H170v68H22ZM72,210a18,18,0,1,1,18-18A18,18,0,0,1,72,210Zm82.6-24H101.4a30,30,0,0,0-58.8,0H24a2,2,0,0,1-2-2V150H170v15.48A30.1,30.1,0,0,0,154.6,186ZM184,210a18,18,0,1,1,18-18A18,18,0,0,1,184,210Zm50-26a2,2,0,0,1-2,2H213.4A30.05,30.05,0,0,0,184,162c-.67,0-1.34,0-2,.07V126h52Z"></path></svg>
-          </span>
-          <span>Livraison gratuit sous 1h</span>
-        </div>
-        <div class="liv-item">
-          <span class="icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M26,128A70.08,70.08,0,0,1,96,58H209.51L195.76,44.24a6,6,0,0,1,8.48-8.48l24,24a6,6,0,0,1,0,8.48l-24,24a6,6,0,0,1-8.48-8.48L209.51,70H96a58.07,58.07,0,0,0-58,58,6,6,0,0,1-12,0Zm198-6a6,6,0,0,0-6,6,58.07,58.07,0,0,1-58,58H46.49l13.75-13.76a6,6,0,0,0-8.48-8.48l-24,24a6,6,0,0,0,0,8.48l24,24a6,6,0,0,0,8.48-8.48L46.49,198H160a70.08,70.08,0,0,0,70-70A6,6,0,0,0,224,122Z"></path></svg>
-          </span>
-          <span>Retour gratuit sous 30 jours</span>
-        </div>
-        <div class="liv-item">
-          <span class="icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M128,26A102,102,0,1,0,230,128,102.12,102.12,0,0,0,128,26Zm0,192a90,90,0,1,1,90-90A90.1,90.1,0,0,1,128,218Zm38-70a26,26,0,0,1-26,26h-6v10a6,6,0,0,1-12,0V174H104a6,6,0,0,1,0-12h36a14,14,0,0,0,0-28H116a26,26,0,0,1,0-52h6V72a6,6,0,0,1,12,0V82h18a6,6,0,0,1,0,12H116a14,14,0,0,0,0,28h24A26,26,0,0,1,166,148Z"></path></svg>
-          </span>
-          <span>Payment de la livraison</span>
-        </div>
-      </div>
-
-      <div class="qct">
-        <label for="quantiter">Quantiter</label><br>
-        <div class="field-input">
-          <input type="number" name="quantiter" id="quantiter">
-          <p class="total">Total: <span class="setTotal">${product.prix} fcfa</span></p>
-        </div>
-      </div>
-      <div class="box-btn">
-        <button class="btn btn-secondary">Payer maintanant</button>
-      </div>
-    </div>
-				`;
-			}
-		});
-	});
-});
 
 // const getCartId = (cart) => {
 // 	let localCart = parseInt(cart.dataset.id);
