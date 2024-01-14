@@ -115,9 +115,12 @@
 	}
 
 	.container-box {
-		figure {
-			display: none;
-		}
+		width: 100%;
+		padding: 0 2rem;
+	}
+
+	.container-box figure{
+		display: none;
 	}
 
 	.nav__cart {
