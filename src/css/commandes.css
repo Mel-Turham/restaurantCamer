@@ -124,7 +124,6 @@ body {
 		text-transform: uppercase;
 	}
 }
-
 .overley {
 	z-index: 8;
 	position: fixed;
@@ -138,121 +137,123 @@ body {
 	justify-content: center;
 	align-items: center;
 	transition: all 300ms ease-in-out;
-
-	.modal-form {
-		width: 45%;
-		background-color: hsl(0, 0%, 97%);
-		padding: 15px;
-		border-radius: 0.313rem;
-		animation: fadeDown 300ms linear  forwards;
-		opacity: 0;
-		position: relative;
-		top: -50px;
-		box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-
-		#form-payemant {
-			width: 100%;
-			height: 100%;
-
-			.header-cart {
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
-				padding: 5px 0;
-				box-shadow: 0px 1px 0.4px rgba(0, 0, 0, 0.2);
-				margin-bottom: 5px;
-
-				h2 {
-					font-size: 1.3rem;
-					font-weight: 300;
-				}
-
-				.icon {
-					width: 25px;
-					height: 25px;
-					display: flex;
-					justify-content: center;
-					align-items: center;
-					position: relative;
-					top: -8px;
-					font-size: 1.5rem;
-					cursor: pointer;
-				}
-			}
-			.value-price {
-				margin: 10px 0;
-				text-align: center;
-
-				.price {
-					font-size: 0.938rem;
-					text-transform: uppercase;
-
-					.final-price {
-						font-weight: 600;
-						margin: 0 5px 0 0;
-					}
-				}
-			}
-
-			.field-inputs {
-				display: grid;
-				grid-template-columns: repeat(auto-fill, minmax(14.375rem, 1fr));
-				grid-template-rows: auto auto;
-				gap: 0.625rem;
-				margin: 1rem 0;
-				width: 100%;	
-
-				input,
-				#option-payemant {
-					border: 1px solid rgba(0, 0, 0, 0.4);
-					border-radius: 2px;
-					outline: none;
-					width: 100%;
-					height: 2rem;
-					padding: 0 8px;
-					
-
-					&:is(:focus) {
-						outline: 2px solid rgba(0, 255, 64, 0.585);
-						border: none;
-					}
-				}
-			}
-
-			button[type='submit'] {
-				width: 100%;
-			}
-		}
-	}
-	.remerciment{
-		width: 45%;
-		background-color: whitesmoke;
-		padding: 15px;
-		border-radius: 0.313rem;
-		animation: fadeDown 300ms linear 0.1s forwards;
-		opacity: 1;
-		position: relative;
-		top: -50px;
-		box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-		display: none;
-		padding: 2rem;
-
-		.icon{
-			position: absolute;
-			top: 5px;
-			right: 10px;
-			cursor: pointer;
-			font-size: 1.4rem;
-		}
-		
-		.message{
-			font-size: 1.5rem;
-			text-transform: uppercase;
-			text-align: center;
-			font-weight: 200;
-		}
-	}
 }
+
+.overley .modal-form {
+	width: 45%;
+	background-color: hsl(0, 0%, 97%);
+	padding: 15px;
+	border-radius: 0.313rem;
+	animation: fadeDown 300ms linear forwards;
+	opacity: 0;
+	position: relative;
+	top: -50px;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.modal-form #form-payemant {
+	width: 100%;
+	height: 100%;
+}
+
+#form-payemant .header-cart {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px 0;
+	box-shadow: 0px 1px 0.4px rgba(0, 0, 0, 0.2);
+	margin-bottom: 5px;
+}
+
+.header-cart h2 {
+	font-size: 1.3rem;
+	font-weight: 300;
+}
+
+.header-cart .icon {
+	width: 25px;
+	height: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	top: -8px;
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+
+#form-payemant .value-price {
+	margin: 10px 0;
+	text-align: center;
+}
+
+.value-price .price {
+	font-size: 0.938rem;
+	text-transform: uppercase;
+}
+
+.price .final-price {
+	font-weight: 600;
+	margin: 0 5px 0 0;
+}
+
+.field-inputs {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(14.375rem, 1fr));
+	grid-template-rows: auto auto;
+	gap: 0.625rem;
+	margin: 1rem 0;
+	width: 100%;
+}
+
+.field-inputs	input,
+	#option-payemant {
+		border: 1px solid rgba(0, 0, 0, 0.4);
+		border-radius: 2px;
+		outline: none;
+		width: 100%;
+		height: 2rem;
+		padding: 0 8px;
+	}
+
+	.field-input	input , #option-payemant {
+			outline: 2px solid rgba(0, 255, 64, 0.585);
+			border: none;
+		}
+
+button[type='submit'] {
+	width: 100%;
+}
+
+.remerciment {
+	width: 45%;
+	background-color: whitesmoke;
+	padding: 15px;
+	border-radius: 0.313rem;
+	animation: fadeDown 300ms linear 0.1s forwards;
+	opacity: 1;
+	position: relative;
+	top: -50px;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+	display: none;
+	padding: 2rem;
+
+}
+
+.remerciment	.icon {
+		position: absolute;
+		top: 5px;
+		right: 10px;
+		cursor: pointer;
+		font-size: 1.4rem;
+	}
+
+	.remerciment	.message {
+		font-size: 1.5rem;
+		text-transform: uppercase;
+		text-align: center;
+		font-weight: 200;
+	}
+
 
 @keyframes fadeDown {
 	0% {
@@ -263,6 +264,8 @@ body {
 		opacity: 1;
 	}
 }
+
+
 .modal-form.active,
 .overley.display {
 	display: flex;
