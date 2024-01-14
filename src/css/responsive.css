@@ -119,7 +119,7 @@
 		padding: 0 2rem;
 	}
 
-	.container-box figure{
+	.container-box figure {
 		display: none;
 	}
 
@@ -131,30 +131,29 @@
 
 	.nombre__de__commade {
 		width: 20rem;
-
-		.nb-commade-titre {
-			font-size: 1rem;
-			text-align: start;
-			word-break: break-all;
-		}
-
-		.icon svg {
-			width: 1.5rem;
-			height: auto;
-			fill: #000;
-		}
-
 	}
-	.overley{
+
+	.nombre__de__commade .nb-commade-titre {
+		font-size: 1rem;
+		text-align: start;
+		word-break: break-all;
+	}
+
+	.nombre__de__commade .icon svg {
+		width: 1.5rem;
+		height: auto;
+		fill: #000;
+	}
+
+	.overley {
 		padding: 0 1rem;
+	}
+	.overley .modal-form {
+		width: 80%;
+	}
 
-		.modal-form{
-			width: 80%;
-		}
-
-		.remerciment{
-			width: 80%;
-		}
+	.overley .remerciment {
+		width: 80%;
 	}
 }
 
@@ -170,15 +169,15 @@
 
 	.form-contact {
 		width: 100%;
-		.fiels-inputs {
-			display: flex;
-			flex-direction: column;
+	}
 
-			input {
-				width: 100%;
-			}
-		}
+	.form-contact .fiels-inputs {
+		display: flex;
+		flex-direction: column;
+	}
 
+	.field-inputs input {
+		width: 100%;
 	}
 	.plat {
 		display: grid;
@@ -192,13 +191,12 @@
 		justify-content: center;
 		align-items: center;
 		flex: 0;
-
 		width: 100%;
+	}
 
-		img {
-			width: 90%;
-			height: 80%;
-		}
+	.figurePlat img {
+		width: 90%;
+		height: 80%;
 	}
 
 	.desc-plat {
@@ -207,23 +205,23 @@
 		flex: 0;
 		margin-top: -2rem;
 	}
-	.overley{
+	.overley {
 		padding: 0 1rem;
-
-		.modal-form{
-			width: 100%;
-		}
-
-		.remerciment{
-			width: 100%;
-		}
 	}
-	.cart-body .ratings{
+
+	.overley .modal-form {
+		width: 100%;
+	}
+
+	.overley .remerciment {
+		width: 100%;
+	}
+	.cart-body .ratings {
 		margin-bottom: 1.8rem;
 	}
 
-	.cart-body .desc-plat h3{
+	.cart-body .desc-plat h3 {
 		margin-top: 2rem;
-		padding-top: .5rem;
+		padding-top: 0.5rem;
 	}
 }
