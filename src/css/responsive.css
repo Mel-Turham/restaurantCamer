@@ -123,6 +123,10 @@
 		display: none;
 	}
 
+	.container-box .meilleur {
+		padding: 2rem;
+	}
+
 	.nav__cart {
 		position: fixed;
 		bottom: 0.313rem;
