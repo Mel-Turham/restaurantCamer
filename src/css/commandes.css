@@ -141,7 +141,7 @@ body {
 
 	.modal-form {
 		width: 45%;
-		background-color: whitesmoke;
+		background-color: hsl(0, 0%, 97%);
 		padding: 15px;
 		border-radius: 0.313rem;
 		animation: fadeDown 300ms linear  forwards;
