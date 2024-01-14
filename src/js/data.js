@@ -3,7 +3,7 @@
 export const data = [
 	{
 		id: 1,
-		image: '../../public/images/pouletpane.jpg',
+		image: '.../../public/images/pouletpane.jpg',
     alt : 'poulet-pane',
 		title: 'Poulet Pane',
 		desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, ex?',
@@ -11,7 +11,7 @@ export const data = [
 	},
 	{
 		id: 2,
-		image: '../../public/images/chocolat.jpg',
+		image: '.../../public/images/chocolat.jpg',
     alt : 'chocolat',
 		title: 'Framboise au Chocolat',
 		desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, ex?',
@@ -19,7 +19,7 @@ export const data = [
 	},
 	{
 		id: 3,
-		image: '../../public/images/biscuit.jpg',
+		image: '.../../public/images/biscuit.jpg',
     alt : 'biscuit',
 		title: 'Savour de Biscuit',
 		desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, ex?',
@@ -27,7 +27,7 @@ export const data = [
 	},
 	{
 		id: 4,
-		image: '../../public/images/HamBurger.jpg',
+		image: '.../../public/images/HamBurger.jpg',
     alt : 'hamurger',
 		title: 'HamBurger',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, ex?',
@@ -35,7 +35,7 @@ export const data = [
 	},
 	{
 		id: 5,
-		image: '../../public/images/Pouletdg.jpg',
+		image: '.../../public/images/Pouletdg.jpg',
     alt : 'poulet-dg',
 		title: 'Poulet DG',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, ex?',
@@ -43,7 +43,7 @@ export const data = [
 	},
 	{
 		id: 6,
-    image: '../../public/images/fritepomme.jpg',
+    image: '.../../public/images/fritepomme.jpg',
     alt : 'pomme-frite',
 		title: 'Pomme Frite',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, ex?',
@@ -51,7 +51,7 @@ export const data = [
 	},
 	{
 		id: 7,
-    image: '../../public/images/pommepile.jpg',
+    image: '.../../public/images/pommepile.jpg',
     alt : 'pomme pile',
 		title: 'Pomme Pile',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, ex?',
@@ -59,7 +59,7 @@ export const data = [
 	},
 	{
 		id: 8,
-    image: '../../public/images/malaxé.jpg',
+    image: '.../../public/images/malaxé.jpg',
     alt : 'malaxé',
 		title: 'Banane malaxé',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, ex?',
@@ -67,7 +67,7 @@ export const data = [
 	},
 	{
 		id: 9,
-    image: '../../public/images/saucejaune.jpg',
+    image: '.../../public/images/saucejaune.jpg',
     alt : 'Taro Sauce Jaune',
 		title: 'Taro Sauce Jaune',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, ex?',
@@ -75,7 +75,7 @@ export const data = [
 	},
 	{
 		id: 10,
-    image: '../../public/images/kwui.jpg',
+    image: '.../../public/images/kwui.jpg',
     alt : 'kwui',
 		title: ' Le Kwui',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, ex?',
@@ -83,7 +83,7 @@ export const data = [
 	},
 	{
 		id: 11,
-    image: '../../public/images/couscousLegumes.jfif',
+    image: '.../../public/images/couscousLegumes.jfif',
     alt : 'couscous legume',
 		title: 'Couscous Legume',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, ex?',
@@ -91,7 +91,7 @@ export const data = [
 	},
 	{
 		id: 12,
-    image: '../../public/images/okok.jpg',
+    image: '.../../public/images/okok.jpg',
     alt : 'okok',
 		title: 'L\'Okok',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, ex?',
