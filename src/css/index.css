@@ -37,36 +37,23 @@ html {
 	box-shadow: 1px 0 0.4rem rgba(0, 0, 0, 0.4);
 }
 
-.header .header__logo {
+.header .logo{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 2rem;
-	gap: 0.3rem;
+	line-height: 1.8;
 }
 
-.header__logo a {
-	height: 100%;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-content: center;
-}
-
-.header__logo a img {
-	width: 100%;
-	height: 100%;
-	border-radius: 100%;
+.header .logo img{
+	width: 2.2rem;
+	height: 2.2rem;
 	object-fit: cover;
 }
 
-img {
-	object-fit: cover;
-	object-position: center;
-}
-
-.header__logo span {
-	font-size: 2rem;
+.header .logo h1{
+	margin-top: .3rem;
+	font-size: 1.8rem;
+	margin-left: 4px;
 	font-weight: 600;
 }
 
