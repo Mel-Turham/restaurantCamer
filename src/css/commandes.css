@@ -144,10 +144,10 @@ body {
 		background-color: whitesmoke;
 		padding: 15px;
 		border-radius: 0.313rem;
-		animation: fadeDown 300ms linear 0.4s forwards;
+		animation: fadeDown 300ms linear  forwards;
 		opacity: 0;
 		position: relative;
-		top: -100px;
+		top: -50px;
 		box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 
 		#form-payemant {
@@ -198,17 +198,19 @@ body {
 				display: grid;
 				grid-template-columns: repeat(auto-fill, minmax(14.375rem, 1fr));
 				grid-template-rows: auto auto;
-				gap: 12px;
+				gap: 0.625rem;
 				margin: 1rem 0;
 				width: 100%;	
 
 				input,
 				#option-payemant {
 					border: 1px solid rgba(0, 0, 0, 0.4);
-					padding: 1px 2px;
 					border-radius: 2px;
 					outline: none;
 					width: 100%;
+					height: 2rem;
+					padding: 0 8px;
+					
 
 					&:is(:focus) {
 						outline: 2px solid rgba(0, 255, 64, 0.585);
@@ -222,11 +224,38 @@ body {
 			}
 		}
 	}
+	.remerciment{
+		width: 45%;
+		background-color: whitesmoke;
+		padding: 15px;
+		border-radius: 0.313rem;
+		animation: fadeDown 300ms linear 0.1s forwards;
+		opacity: 1;
+		position: relative;
+		top: -50px;
+		box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+		display: none;
+		padding: 2rem;
+
+		.icon{
+			position: absolute;
+			top: 5px;
+			right: 10px;
+			cursor: pointer;
+			font-size: 1.4rem;
+		}
+		
+		.message{
+			font-size: 1.5rem;
+			text-transform: uppercase;
+			text-align: center;
+			font-weight: 200;
+		}
+	}
 }
 
 @keyframes fadeDown {
 	0% {
-		top: -100px;
 		opacity: 0;
 	}
 	100% {
@@ -234,7 +263,7 @@ body {
 		opacity: 1;
 	}
 }
-
+.modal-form.active,
 .overley.display {
 	display: flex;
 	opacity: 1;

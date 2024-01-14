@@ -144,7 +144,12 @@
 	}
 	.overley{
 		padding: 0 1rem;
+
 		.modal-form{
+			width: 80%;
+		}
+
+		.remerciment{
 			width: 80%;
 		}
 	}
@@ -201,8 +206,21 @@
 	}
 	.overley{
 		padding: 0 1rem;
+
 		.modal-form{
 			width: 100%;
 		}
+
+		.remerciment{
+			width: 100%;
+		}
+	}
+	.cart-body .ratings{
+		margin-bottom: 1.8rem;
+	}
+
+	.cart-body .desc-plat h3{
+		margin-top: 2rem;
+		padding-top: .5rem;
 	}
 }
