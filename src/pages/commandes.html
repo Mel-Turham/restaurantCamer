@@ -28,7 +28,7 @@
 				</a>
 				<span>CamerResto.</span>
 			</div>
-			<nav class="header__nav">
+			<nav class="header__nav js-navigation">
 				<button class="close__nav js-close-nav">x</button>
 				<menu class="nav__menu">
 					<li class="menu__item">
@@ -66,7 +66,7 @@
 
 		<section class="plat js-plat-details">
 			<figure class="figurePlat">
-				<img src="" alt="" />
+				<img src="../../public/images/Pouletdg.jpg" alt="Pouletdg" />
 			</figure>
 
 			<div class="desc-plat">
@@ -123,9 +123,9 @@
 					</span>
 				</div>
 				<div class="prix">
-					<span class="plat-courant">1000 fcfa</span>
+					<span class="plat-courant"> <span class=" js-price">1000</span>fcfa</span>
 					<span class="ancien-prix">2000 fcfa</span>
-					<span class="promo"> promo</span>
+					<span class="promo">promo</span>
 				</div>
 				<p class="vous">Vous economisez <strong> 1000 fcfa</strong></p>
 				<div class="livraison">
@@ -182,22 +182,53 @@
 				<div class="qct">
 					<label for="quantiter">Quantiter</label><br />
 					<div class="field-input">
-						<input type="number" name="quantiter" id="quantiter" />
-						<p class="total">Total: <span class="setTotal">1000 fcfa</span></p>
+						<input type="number" name="quantiter" id="quantiter" min="1" value="1" />
+						<p class="total">Total: <span class="setTotal">1000 </span> fcfa</p>
 					</div>
 				</div>
 				<div class="box-btn">
-					<button class="btn btn-secondary">Payer maintanant</button>
+					<button class="btn btn-secondary js-button-pay">Payer maintanant</button>
 				</div>
 			</div>
 		</section>
+
+		<div class="overley">
+			<div class="modal-form">
+				<form id="form-payemant" >
+					<div class="header-cart">
+						<h2>Details sur la cart</h2>
+						<span class="icon js-close-modal-form">X</span>
+					</div>
+					<div class="value-price">
+						<h3 class="price">Vous allez payez au total: <span class="final-price">1000</span> fcfa</h3>
+					</div>
+						<div class="field-inputs">
+							<input type="text" name="name" id="name" placeholder="Entrer votre nom..." autocomplete="off">
+							<input type="text" name="address" id="address" placeholder="Entrer votre address..." autocomplete="off">
+							<input type="tel" name="tel" id="tel" placeholder="Entrer votre num..." autocomplete="off">
+
+							<select name="payemamt" id="option-payemant">
+								<option>Mode de paiement</option>
+								<option value="Orange Money">Orange Money</option>
+								<option value="PayPal">PayPal</option>
+								<option value="Mobile Money">Mobile Money</option>
+								<option value="UBA">UBA</option>
+							</select>
+						</div>
+
+					<button type="submit" class="btn btn-primary" disabled ="true">Payer</button>
+				</form>
+			</div>
+		</div>
+
+
 
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
 			crossorigin="anonymous"
 		></script>
-		<!-- <script type="module" src="../../src/js/index.js"></script> -->
-		<script type="module" src="../../src/js/commande.js"></script>
+
+    <script src="../js/commande.js"></script>
 	</body>
 </html>

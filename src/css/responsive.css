@@ -23,7 +23,6 @@
 	}
 	.header__logo span {
 		font-size: 1.5rem;
-		
 	}
 	.header__nav {
 		z-index: 10;
@@ -121,29 +120,34 @@
 		}
 	}
 
-	.nav__cart{
+	.nav__cart {
 		position: fixed;
 		bottom: 0.313rem;
 		right: 1rem;
 	}
 
-	.nombre__de__commade{
+	.nombre__de__commade {
 		width: 20rem;
 
-		.nb-commade-titre{
+		.nb-commade-titre {
 			font-size: 1rem;
 			text-align: start;
 			word-break: break-all;
 		}
 
-		.icon svg{
+		.icon svg {
 			width: 1.5rem;
 			height: auto;
 			fill: #000;
 		}
-	}
-	
 
+	}
+	.overley{
+		padding: 0 1rem;
+		.modal-form{
+			width: 80%;
+		}
+	}
 }
 
 /* mobile */
@@ -156,17 +160,49 @@
 		width: 100%;
 	}
 
-	form{
+	.form-contact {
 		width: 100%;
-		.fiels-inputs{
+		.fiels-inputs {
 			display: flex;
 			flex-direction: column;
 
-			input{
+			input {
 				width: 100%;
 			}
 		}
+
+	}
+	.plat {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		place-items: center;
+		padding: 0;
+	}
+
+	.figurePlat {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex: 0;
+
+		width: 100%;
+
+		img {
+			width: 90%;
+			height: 80%;
+		}
+	}
+
+	.desc-plat {
+		width: 100%;
+		padding: 0 1rem;
+		flex: 0;
+		margin-top: -2rem;
+	}
+	.overley{
+		padding: 0 1rem;
+		.modal-form{
+			width: 100%;
+		}
 	}
 }
-
-
