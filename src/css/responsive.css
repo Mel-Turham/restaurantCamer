@@ -185,24 +185,17 @@
 	.field-inputs input {
 		width: 100%;
 	}
-	.plat {
-		display: grid;
-		grid-template-columns: repeat(1, 1fr);
-		place-items: center;
-		padding: 0;
+	.body-commande{
+		justify-content: start;
+	}
+	.plat{
+		flex-direction: column;
 	}
 
-	.figurePlat {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex: 0;
+	.plat .figurePlat{
 		width: 100%;
-	}
-
-	.figurePlat img {
-		width: 90%;
-		height: 80%;
+		justify-content: start;
+		padding: 1.1rem;
 	}
 
 	.desc-plat {
