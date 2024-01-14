@@ -122,9 +122,8 @@
 	.container-box figure {
 		display: none;
 	}
-
-	.container-box .meilleur {
-		padding: 2rem;
+	.container-box .meilleur p{
+		padding:0 .7rem;
 	}
 
 	.nav__cart {
@@ -163,6 +162,9 @@
 
 /* mobile */
 @media (max-width: 480px) {
+	.container-box .meilleur{
+		padding:0 .8rem;
+	}
 	.sombre {
 		display: none;
 		opacity: 0;
