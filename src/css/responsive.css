@@ -122,8 +122,8 @@
 	.container-box figure {
 		display: none;
 	}
-	.container-box .meilleur p{
-		padding:0 .7rem;
+	.container-box .meilleur p {
+		padding: 0 0.7rem;
 	}
 
 	.nav__cart {
@@ -162,8 +162,8 @@
 
 /* mobile */
 @media (max-width: 480px) {
-	.container-box .meilleur{
-		padding:0 .8rem;
+	.container-box .meilleur {
+		padding: 0 0.8rem;
 	}
 	.sombre {
 		display: none;
@@ -229,5 +229,11 @@
 	.cart-body .desc-plat h3 {
 		margin-top: 2rem;
 		padding-top: 0.5rem;
+	}
+
+	.footer {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: auto;
 	}
 }

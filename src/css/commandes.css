@@ -27,54 +27,58 @@ body {
 .desc-plat {
 	flex: 1;
 	margin-left: 10px;
-
-	.nom-plat {
-		font-weight: 700;
-		margin-bottom: -0.1rem;
-	}
-
-	.raitings .icon svg {
-		width: 1.125rem;
-		height: 1.125rem;
-	}
-	.prix .plat-courant {
-		font-size: 1.3rem;
-		font-weight: 300;
-		text-transform: uppercase;
-	}
-
-	.prix .ancien-prix {
-		font-size: 1.3rem;
-		font-weight: 300;
-		text-decoration: line-through;
-		text-transform: uppercase;
-		margin-left: 0.5rem;
-	}
-
-	.prix .promo {
-		background-color: #e50707;
-		margin-left: 0.563rem;
-		padding: 0.313rem;
-		font-size: 17px;
-		text-transform: capitalize;
-		color: #fff;
-		font-weight: 500;
-		border-radius: 0.313rem;
-
-		&:hover {
-			cursor: no-drop;
-		}
-	}
-
-	.vous {
-		font-size: 1rem;
-		text-transform: capitalize;
-		strong {
-			font-size: 1.125rem;
-			text-transform: uppercase;
-		}
-	}
 }
+
+.desc-plat .nom-plat {
+	font-weight: 700;
+	margin-bottom: -0.1rem;
+}
+
+.desc-plat .raitings {
+	display: flex;
+	align-items: center;
+	width: 20%;
+}
+.desc-plat .raitings .icon svg {
+	width: 100%;
+	height: 100%;
+	fill: #e50707;
+}
+
+.desc-plat .prix .plat-courant {
+	font-size: 1.3rem;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+.prix .ancien-prix {
+	font-size: 1.3rem;
+	font-weight: 600;
+	text-decoration: line-through;
+	text-transform: uppercase;
+	margin-left: 0.5rem;
+}
+
+.desc-plat .prix .promo {
+	background-color: #e50707;
+	margin-left: 0.563rem;
+	padding: 0.313rem;
+	font-size: 17px;
+	text-transform: capitalize;
+	color: #fff;
+	font-weight: 500;
+	border-radius: 0.313rem;
+}
+
+.desc-plat .prix .promo:hover {
+	cursor: no-drop;
+}
+
+.desc-plat .vous {
+	font-size: 1.2rem;
+	text-transform: capitalize;
+}
+
 .livraison {
 	padding: 0.625rem;
 	background-color: #fff;
@@ -82,48 +86,61 @@ body {
 	flex-direction: column;
 	margin-bottom: 0.313rem;
 	margin-top: -0.625rem;
-	width: 55%;
+	width: 70%;
 	line-height: 1.8;
 	border-radius: 5px;
 	box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.livraison .liv-item {
-	.icon svg {
-		fill: #000;
-		width: 22px;
-		height: 22px;
-	}
+.livraison .liv-item{
+	display: flex;
+	align-items: center;
 }
 
+.liv-item .icon{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	margin-right: 5px;
+}
+
+.liv-item .icon svg{
+	width: 1.25rem;
+	height: 1.25rem;
+}
+
+
 .qct label {
-	font-weight: 100;
+	font-weight: 500;
+	text-transform: uppercase;
+	margin-top: 10px;
 }
 
 .qct .field-input {
 	display: flex;
 	align-items: center;
+	justify-content: start;
 	line-height: 1;
-
-	input {
-		width: 5.625rem;
-		outline: none;
-		border: 1px solid #d1d1d1;
-		border-radius: 0.313rem;
-		padding: 0.125rem;
-		&:is(:focus) {
-			outline: 2px solid #d1d1d1;
-		}
-	}
-
-	.total {
-		margin-top: 0.75rem;
-		margin-left: 0.625rem;
-		font-size: 20px;
-		font-weight: 600;
-		text-transform: uppercase;
-	}
 }
+
+.field-input input {
+	width: 2.625rem;
+	height: 1.25rem;
+	outline: none;
+	border: 1px solid #d1d1d1;
+	border-radius: 0.313rem;
+	padding: 0.125rem;
+}
+
+.total {
+	margin-top: 0.75rem;
+	margin-left: 0.625rem;
+	font-size: 0.876rem;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
 .overley {
 	z-index: 8;
 	position: fixed;
@@ -205,20 +222,21 @@ body {
 	width: 100%;
 }
 
-.field-inputs	input,
-	#option-payemant {
-		border: 1px solid rgba(0, 0, 0, 0.4);
-		border-radius: 2px;
-		outline: none;
-		width: 100%;
-		height: 2rem;
-		padding: 0 8px;
-	}
+.field-inputs input,
+#option-payemant {
+	border: 1px solid rgba(0, 0, 0, 0.4);
+	border-radius: 2px;
+	outline: none;
+	width: 100%;
+	height: 2rem;
+	padding: 0 8px;
+}
 
-	.field-input	input , #option-payemant {
-			outline: 2px solid rgba(0, 255, 64, 0.585);
-			border: none;
-		}
+.field-input input,
+#option-payemant {
+	outline: 2px solid rgba(0, 255, 64, 0.585);
+	border: none;
+}
 
 button[type='submit'] {
 	width: 100%;
@@ -236,24 +254,22 @@ button[type='submit'] {
 	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 	display: none;
 	padding: 2rem;
-
 }
 
-.remerciment	.icon {
-		position: absolute;
-		top: 5px;
-		right: 10px;
-		cursor: pointer;
-		font-size: 1.4rem;
-	}
+.remerciment .icon {
+	position: absolute;
+	top: 5px;
+	right: 10px;
+	cursor: pointer;
+	font-size: 1.4rem;
+}
 
-	.remerciment	.message {
-		font-size: 1.5rem;
-		text-transform: uppercase;
-		text-align: center;
-		font-weight: 200;
-	}
-
+.remerciment .message {
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 200;
+}
 
 @keyframes fadeDown {
 	0% {
@@ -264,7 +280,6 @@ button[type='submit'] {
 		opacity: 1;
 	}
 }
-
 
 .modal-form.active,
 .overley.display {
